@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamCityGate", "TeamCityGate.csproj", "{167CA247-7F68-42F8-9871-D871DCB8A61E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestsTeamCityGate", "UnitTestsTeamCityGate\UnitTestsTeamCityGate.csproj", "{394CE268-1067-4BED-934A-4509E202031D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{167CA247-7F68-42F8-9871-D871DCB8A61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{167CA247-7F68-42F8-9871-D871DCB8A61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{167CA247-7F68-42F8-9871-D871DCB8A61E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{167CA247-7F68-42F8-9871-D871DCB8A61E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{394CE268-1067-4BED-934A-4509E202031D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{394CE268-1067-4BED-934A-4509E202031D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{394CE268-1067-4BED-934A-4509E202031D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{394CE268-1067-4BED-934A-4509E202031D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37B70CE1-E331-4C72-B686-E36C74F7F608}
+	EndGlobalSection
+EndGlobal

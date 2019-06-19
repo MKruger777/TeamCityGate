@@ -1,0 +1,1 @@
+[2019-06-14 23:49:22] - The TeamCity server url specified http:/build.binckbank.nv is invalid. Please recheck and try again.
