@@ -10,6 +10,9 @@ namespace TeamCityGate
 
             public const char TCBuildConfID_i = 'i';
             public const string TCBuildConfID = "Specify the teamcity build config id to be used. example: Topline_T1_Build";
+
+            public const char VCRevision_r = 'r';
+            public const string VCRevision = "Specify the version control revision that will be checked. example: 159172 ";
         }
     }
 }
