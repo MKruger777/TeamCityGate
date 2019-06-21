@@ -7,6 +7,7 @@ namespace TeamCityGate
         static void Main(string[] args)
         {
             Timer timer = new Timer();
+            //bool vcRevisionBuildStatus = false;
 
             try
             {
@@ -38,6 +39,7 @@ namespace TeamCityGate
             ConsoleHelper.WriteLine("Application will terminate");
             ConsoleHelper.WriteLine(Environment.NewLine + "Press any key to continue...", ConsoleColor.Green);
             Console.ReadKey();
+            //return vcRevisionBuildStatus;
         }
         
         private static void EchoParameters(Options options)

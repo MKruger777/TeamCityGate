@@ -25,10 +25,12 @@ namespace TeamCityGate
             int last_successfull_build_vc_rev = GetLastSuccessfulVCRev();
             if (last_successfull_build_vc_rev >= max_vc_rev_num_to_merge)
             {
+                ConsoleHelper.WriteLine(Environment.NewLine + "The build result for vc revision  " + max_vc_rev_num_to_merge + "  is considerd SUCCESSFULL! ...", ConsoleColor.Green);
                 return true;
             }
             else
             {
+                ConsoleHelper.WriteLine(Environment.NewLine + "The build result for vc revision " + max_vc_rev_num_to_merge + " is BROKEN ...", ConsoleColor.Red);
                 return false;
             }
         }
@@ -39,7 +41,7 @@ namespace TeamCityGate
             string buildConfigId = TeamCityBuildConfID;
             try
             {
-                client.Connect(@"un", @"pw");
+                
             }
             catch (Exception e)
             {
@@ -54,6 +56,7 @@ namespace TeamCityGate
             //now get the build info
             var buildinfo = client.Builds.ById(b.Id);
             var buildNumber = buildinfo.Number;
+            //var buildEnv = buildinfo.Properties.Property
 
             //The version control revision is not allways present in the build info - especialy in the way the TC templates is structured within Binck
             //Now get the SnapshotDependencies build resource link...
@@ -64,8 +67,8 @@ namespace TeamCityGate
             string vc_revision = RetrieveVCRevisionUsed(bldSnapshotDepHref);
 
             Console.WriteLine(Environment.NewLine + "Last successfull build for {0} is build number:{1} (build id:{2})", buildConfigId, buildNumber, lastSuccessfullBuildId);
-            Console.WriteLine("For build id:{0} the linked VC revision is:{1}", lastSuccessfullBuildId, vc_revision);
-            Console.WriteLine("The status of build id:{0} was: {1}", lastSuccessfullBuildId, build_status);
+            Console.WriteLine("Build number:{0} (build id:{1}) was build with VC revision: {2}", buildNumber, lastSuccessfullBuildId, vc_revision);
+            Console.WriteLine("Build number:{0} (build id:{1}) was:{1} ", buildNumber, lastSuccessfullBuildId, build_status);
             return int.Parse(vc_revision);
         }
 
@@ -73,7 +76,7 @@ namespace TeamCityGate
         {
             string change_vcrevision = string.Empty;
             var client = new RestClient(@"https://" + TeamCityUrl);
-            client.Authenticator = new HttpBasicAuthenticator(@"un", @"pw");
+            
 
             var request = new RestRequest(resource, Method.GET, DataFormat.Json);
             request.OnBeforeDeserialization = resp => { resp.ContentType = "application/json"; };

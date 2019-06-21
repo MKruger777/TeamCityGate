@@ -65,3 +65,6 @@ D:\dev\github\TeamCityGate\UnitTestsTeamCityGate\obj\Debug\UnitTestsTeamCityGate
 D:\dev\github\TeamCityGate\UnitTestsTeamCityGate\obj\Debug\UnitTestsTeamCityGate.csproj.CopyComplete
 D:\dev\github\TeamCityGate\UnitTestsTeamCityGate\obj\Debug\UnitTestsTeamCityGate.dll
 D:\dev\github\TeamCityGate\UnitTestsTeamCityGate\obj\Debug\UnitTestsTeamCityGate.pdb
+D:\dev\github\TeamCityGate\UnitTestsTeamCityGate\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\dev\github\TeamCityGate\UnitTestsTeamCityGate\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\dev\github\TeamCityGate\UnitTestsTeamCityGate\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll

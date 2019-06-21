@@ -12,7 +12,9 @@ namespace UnitTestsTeamCityGate
         {
             bool expected = true;
             BuildValidator bv = new BuildValidator();
-            bool actual = bv.Validate(34);
+            bv.TeamCityUrl = "teamcity.binckbank.nv";
+            bv.TeamCityBuildConfID = "T1_02BuildCompilation";
+            bool actual = bv.Validate(159172);
             Assert.AreEqual(expected, actual);
         }
 
@@ -21,7 +23,9 @@ namespace UnitTestsTeamCityGate
         {
             bool expected = false;
             BuildValidator bv = new BuildValidator();
-            bool actual = bv.Validate(35);
+            bv.TeamCityUrl = "teamcity.binckbank.nv";
+            bv.TeamCityBuildConfID = "T1_02BuildCompilation";
+            bool actual = bv.Validate(1591777);
             Assert.AreEqual(expected, actual);
         }
     }
